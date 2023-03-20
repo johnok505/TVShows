@@ -5,3 +5,4 @@
 - Retrofit for api calls
 - Moshi for JSON parsing
 - Kotlin Coroutines for asynchronous programming
+- Picasso for image displaying

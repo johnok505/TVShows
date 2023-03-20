@@ -1,6 +1,5 @@
 package com.jok.tvshows.repository
 
-import android.content.Context
 import com.jok.tvshows.model.TMDBResponse
 import com.jok.tvshows.network.NetworkLayer
 
