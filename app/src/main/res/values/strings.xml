@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TVShows</string>
     <string name="header_title">TV Shows</string>
+    <string name="filter_text">Sort items A-Z</string>
 </resources>
