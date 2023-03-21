@@ -1,5 +1,6 @@
 package com.jok.tvshows.network
 
+import com.jok.tvshows.BuildConfig
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -7,8 +8,8 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object NetworkLayer {
     private val moshi = Moshi.Builder().addLast(
         com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory()).build()
-    private val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl("https://api.themoviedb.org/3/")
+    val retrofit: Retrofit = Retrofit.Builder()
+        .baseUrl(BuildConfig.BASE_URL)
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 
